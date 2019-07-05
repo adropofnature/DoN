@@ -25,6 +25,11 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
+  <script>
+    var htm ='<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1bhDwMUHwHhtV37x4deps6bhbWOjAwnOs&zoom=20" style="width:100%;height:230px; border:0" frameborder="0"></iframe>';
+</script>
+
+
   <!-- Style Data -->
   <style>
   body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
@@ -196,7 +201,7 @@ OL57, OS Explorer;</i>
       <h4>Getting There</h4>
       The hike starts from Glenmore, which is easily reached by public transport from Aviemore which in turn can be accessed by train from Edinburgh and Glasgow.
 
-  <div class="embed-container"><iframe width="500" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="CairngormsMap" src="https://www.arcgis.com/apps/Embed/index.html?webmap=823a32c90d364dd58ac599fc7e154658&extent=-4.0483,57.0199,-3.2483,57.2346&zoom=true&previewImage=false&scale=true&disable_scroll=false&theme=dark"></iframe></div>
+  <div class="embed-container"><iframe width="500" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="CairngormsMap" src="https://www.google.com/maps/d/u/0/embed?mid=1bhDwMUHwHhtV37x4deps6bhbWOjAwnOs&zoom=20"></iframe></div>
 
            <h4>Photos</h4>
            <div class="w3-card-4">
@@ -903,16 +908,21 @@ OL57, OS Explorer;</i>
 
 
 <script>
+function refreshIframe() {
+    isrc = $('.embed-container iframe').attr('src');
+    $('.embed-container iframe').attr('src', isrc)
+}
+
 $('.w3-button').on('click', function(){
   if (  $(this).prev().css("display") == "block" ) {
     $(this).prev().slideUp(500);
     $(this).html('<b>Continue Reading »</b>');
-
   }
   else if( $(this).prev().css("display") == "none") {
     $(this).prev().slideDown(500);
     $(this).html('<b>Collapse</b>');
   }
+  setTimeout(refreshIframe(), 1000);
 });
 </script>
 <SCRIPT>
