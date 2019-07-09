@@ -25,9 +25,7 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-  <script>
-    var htm ='<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1bhDwMUHwHhtV37x4deps6bhbWOjAwnOs&zoom=20" style="width:100%;height:230px; border:0" frameborder="0"></iframe>';
-</script>
+
 
 
   <!-- Style Data -->
@@ -114,7 +112,7 @@
   }
 }
 
-.embed-container {position: relative; padding-bottom: 80%; height: 0; max-width: 100%;} .embed-container iframe, .embed-container object,
+.embed-container {position: relative; padding-bottom: 60%; height: 0; max-width: 100%;} .embed-container iframe, .embed-container object,
 .embed-container iframe{position: absolute; top: 0; left: 0; width: 100%; height: 100%;} small{position: absolute; z-index: 40; bottom: 0; margin-bottom: -15px;}
   </style>
 </head>
@@ -191,7 +189,9 @@ and is wrapped around the whole page content, except for the footer in this exam
 
    <h4>Map</h4>
 
-    <img src="CairngormsMap.jpg" alt="CairngormsMap" border="0" style="width:100%"><br />
+
+     <div class="embed-container"><iframe width="500" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="CairngormsMap" src="https://www.google.com/maps/d/u/0/embed?mid=1bhDwMUHwHhtV37x4deps6bhbWOjAwnOs&ll=57.12479863944945%2C-3.711282969499962&z=11"></iframe></div>
+
  <p> The paper map that covers the area is: <i>Map of Cairn Gorm & Aviemore
 Loch Morlich
 OL57, OS Explorer;</i>
@@ -200,8 +200,6 @@ OL57, OS Explorer;</i>
     <a href="Cairngorms.gpx" download><i class="fa fa-link" style="font-size:12px;color:blue"></i></a>. </p>
       <h4>Getting There</h4>
       The hike starts from Glenmore, which is easily reached by public transport from Aviemore which in turn can be accessed by train from Edinburgh and Glasgow.
-
-  <div class="embed-container"><iframe width="500" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="CairngormsMap" src="https://www.google.com/maps/d/u/0/embed?mid=1bhDwMUHwHhtV37x4deps6bhbWOjAwnOs&zoom=20"></iframe></div>
 
            <h4>Photos</h4>
            <div class="w3-card-4">
@@ -426,7 +424,8 @@ OL57, OS Explorer;</i>
 
       <h4>Map</h4>
 
-       <img src="JotunheimenMap.png" alt="Jotunheimen Map" border="0" style="width:100%"><br />
+      <div class="embed-container"><iframe width="500" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="CairngormsMap" src="https://www.google.com/maps/d/u/0/embed?mid=11Ne4hIYkjaELkdz8v1riNnccSr_93KEp&ll=61.46822575236268%2C8.544376196500025&z=10" ></iframe></div>
+
    <p> The paper map that covers the area is: <i>Jotunheimen 1:100 000, Nordeca;</i>
          available at  <a href="https://forhandlere.nordecakonsument.com/turkart-serien/turkart-1-100-000/jotunheimen-1-100-000 "><i class="fa fa-link" style="font-size:12px;color:blue"></i></a>.
          The track data can be downloaded in gpx format from
@@ -694,7 +693,8 @@ OL57, OS Explorer;</i>
 <img src="UrhoKekkonenTrackElevation.png" alt="River" border="0" style="width:100%"><br />
 
       <h4>Map</h4>
-  <img src="UrhoKekkonenMap.jpg" alt="UrhoKekkonenMap" border="0" style="width:100%"><br />
+      <div class="embed-container"><iframe width="500" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="CairngormsMap" src="https://www.google.com/maps/d/u/0/embed?mid=1UpzeGSZRf_G9M8d51VyoYtlb4DnzDwQ5&ll=68.32753113228549%2C28.117101751499945&z=10"></iframe></div>
+
   <p> The paper map that covers the area is: <i>Urho Kekkonen Kansallispuisto 1:100 000, Karttakeskus;</i>
         available at  <a href="https://en.aventurenordique.com/outdoor-map-urho-kekkonen-national-park.html"><i class="fa fa-link" style="font-size:12px;color:blue"></i></a>.
         The track data can be downloaded in gpx format from
@@ -908,10 +908,10 @@ OL57, OS Explorer;</i>
 
 
 <script>
-function refreshIframe() {
+/*function refreshIframe() {
     isrc = $('.embed-container iframe').attr('src');
     $('.embed-container iframe').attr('src', isrc)
-}
+}*/
 
 $('.w3-button').on('click', function(){
   if (  $(this).prev().css("display") == "block" ) {
@@ -922,7 +922,7 @@ $('.w3-button').on('click', function(){
     $(this).prev().slideDown(500);
     $(this).html('<b>Collapse</b>');
   }
-  setTimeout(refreshIframe(), 1000);
+  /*setTimeout(refreshIframe(), 1000);*/
 });
 </script>
 <SCRIPT>
