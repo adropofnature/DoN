@@ -10,7 +10,6 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'UA-142196486-1');
 </script>
 
@@ -101,17 +100,14 @@
       width: 120%;
     }
 }
-
 .logo img{
   width: 220px;
 }
-
 @media (max-width:600px){
   .logo img{
     width: 150px;
   }
 }
-
 .embed-container {position: relative; padding-bottom: 60%; height: 0; max-width: 100%;} .embed-container iframe, .embed-container object,
 .embed-container iframe{position: absolute; top: 0; left: 0; width: 100%; height: 100%;} small{position: absolute; z-index: 40; bottom: 0; margin-bottom: -15px;}
   </style>
@@ -135,7 +131,7 @@ and is wrapped around the whole page content, except for the footer in this exam
  <img src="DoN.png" alt="A Drop of Nature">
 </div>
 
-  <h3>A  collection of hikes through the wildernesses of the north.</h3>
+  <h3>A  collection of hikes through the wildernesses of the north.</h3>
 
 </header>
 <!-- Grid -->
@@ -190,7 +186,7 @@ and is wrapped around the whole page content, except for the footer in this exam
    <h4>Map</h4>
 
 
-     <div class="embed-container"><iframe  style="position:relative; top:-30px; border:none;" title="CairngormsMap" src="https://www.google.com/maps/d/u/0/embed?mid=1bhDwMUHwHhtV37x4deps6bhbWOjAwnOs&ll=57.12479863944945%2C-3.711282969499962&z=10"></iframe></div>
+     <div class="embed-container"><iframe  title="CairngormsMap" src="https://www.google.com/maps/d/u/0/embed?mid=1bhDwMUHwHhtV37x4deps6bhbWOjAwnOs&ll=57.12479863944945%2C-3.711282969499962&z=10"></iframe></div>
 
  <p> The paper map that covers the area is: <i>Map of Cairn Gorm & Aviemore
 Loch Morlich
@@ -912,7 +908,6 @@ OL57, OS Explorer;</i>
     isrc = $('.embed-container iframe').attr('src');
     $('.embed-container iframe').attr('src', isrc)
 }*/
-
 $('.w3-button').on('click', function(){
   if (  $(this).prev().css("display") == "block" ) {
     $(this).prev().slideUp(500);
