@@ -234,3 +234,6 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 
 .menu{padding:0em 0px; line-height: 20px}
 .menu1{padding-top: 10px}
+html {
+  scroll-behavior: smooth;
+}
